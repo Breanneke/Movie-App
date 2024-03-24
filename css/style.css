@@ -527,3 +527,62 @@ header {
     }
   }
 }
+@media (max-width: 600px) {
+  .home-title {
+    font-size: 1rem;
+  }
+  .watch-btn .bx {
+    font-size: 15px;
+    background: var(--main-color);
+    width: 35px;
+    height: 35px;
+  }
+  .home-text {
+    padding-left: 6px;
+    margin-top: 219px;
+  }
+  .play-text {
+    left: -41px;
+    padding: 50px;
+  }
+  .play-movie {
+    bottom: 3rem;
+    right: 4rem;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .home-title {
+    font-size: 1rem;
+  }
+  .watch-btn .bx {
+    font-size: 7px;
+    background: var(--main-color);
+    width: 16px;
+    height: 16px;
+  }
+  .home-text {
+    padding-left: 3px;
+    margin-top: 250px;
+  }
+  .play-text {
+    left: -41px;
+    padding: 50px;
+  }
+  .play-movie {
+    bottom: 3rem;
+    right: 1rem;
+    width: 24px;
+    height: 24px;
+    font-size: 13px;
+  }
+}
+.download-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 2rem;
+  margin: 0 auto;
+}
