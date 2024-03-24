@@ -280,6 +280,7 @@ header {
   padding: 12px 20px;
   color: var(--text-color);
   font-weight: 500;
+  border-radius: 30px;
 }
 .next-btn:hover {
   background: var(--hover-color);
@@ -288,6 +289,9 @@ header {
 .copyright {
   text-align: center;
   padding: 20px;
+}
+.copyright p span {
+  color: var(--main-color);
 }
 /* play page */
 .play-container {
@@ -426,6 +430,8 @@ header {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 150px));
   gap: 2rem;
+  justify-content: center;
+  align-items: center;
 }
 .cast-img {
   width: 150px;
@@ -458,8 +464,8 @@ header {
   background: var(--main-color);
   padding: 12px 24px;
   color: var(--body-color);
-  letter-spacing: 1rem;
   font-weight: 500;
+  border-radius: 40px;
 }
 .download-links a:hover {
   background: var(--hover-color);
@@ -495,11 +501,29 @@ header {
     width: 95%;
   }
 }
-@media (max-width: 779px) {
-  .movie-box {
-    height: 340px;
+@media (max-width: 816px) {
+  .nav {
+    padding: 15px 0;
   }
-  .movies-content {
-    grid-template-columns: repeat(auto-fit, minmax(214px, 1fr));
+  .home {
+    min-height: 440px;
+    margin-top: 4rem !important;
+  }
+  .home-text {
+    padding-left: 14px;
+  }
+  @media (max-width: 779px) {
+    .movie-box {
+      height: 340px;
+    }
+    .movies-content {
+      grid-template-columns: repeat(auto-fit, minmax(214px, 1fr));
+    }
+  }
+  @media (max-width: 733px) {
+    .cast {
+      align-items: center;
+      justify-content: center;
+    }
   }
 }
